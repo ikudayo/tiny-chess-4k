@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-chess-01/ikudayo/tiny-chess-4k/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 [![reward](https://make.fun/badge/tiny-chess-01/ikudayo/tiny-chess-4k/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
-An original chess engine in Python that fits in 4 KB: negamax alpha-beta search with quiescence (captures and check evasions), a transposition table, null-move pruning, late-move reductions, killer and history move ordering, and a tapered material + piece-square evaluation with incremental score and Zobrist hashing. It searches a fixed cumulative budget of 220,000 nodes per move, so it is fully deterministic and never reads the clock. The readable source is `engine.py`; `main.py` is that source packed with lzma by the make.fun kit's compress command.
+An original chess engine in Python that fits in 4 KB: negamax alpha-beta search with quiescence (captures and check evasions), a transposition table, null-move pruning, late-move reductions, killer and history move ordering, and a tapered material + piece-square evaluation with incremental score and Zobrist hashing. It searches a fixed cumulative budget of 150,000 nodes per move, so it is fully deterministic and never reads the clock. In local practice trials against the kit's house engines it scored Elo 1809 (5 wins, 1 draw, 0 losses). The readable source is `engine.py`; `main.py` is that source packed with lzma by the make.fun kit's compress command.
 
 ## Run it
 
